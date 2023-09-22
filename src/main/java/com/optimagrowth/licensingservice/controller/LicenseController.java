@@ -2,6 +2,7 @@ package com.optimagrowth.licensingservice.controller;
 
 import com.optimagrowth.licensingservice.model.License;
 import com.optimagrowth.licensingservice.service.LicenseService;
+import java.util.Locale;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -31,8 +32,9 @@ public class LicenseController {
     @PostMapping
     public ResponseEntity<String> createLicense(
         @PathVariable("organizationId") String organizationId,
-        @RequestBody License request) {
-        return ResponseEntity.ok(licenseService.createLicense(request, organizationId));
+        @RequestBody License request,
+        @RequestHeader(value = "Accept-Language", required = false) Locale locale) {
+        return ResponseEntity.ok(licenseService.createLicense(request, organizationId, locale));
     }
 
     @DeleteMapping("/{licenseId}")
