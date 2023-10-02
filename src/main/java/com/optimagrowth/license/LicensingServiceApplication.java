@@ -1,4 +1,4 @@
-package com.optimagrowth.licensingservice;
+package com.optimagrowth.license;
 
 import java.util.Locale;
 import org.springframework.boot.SpringApplication;

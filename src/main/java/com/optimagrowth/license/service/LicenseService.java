@@ -1,6 +1,6 @@
-package com.optimagrowth.licensingservice.service;
+package com.optimagrowth.license.service;
 
-import com.optimagrowth.licensingservice.model.License;
+import com.optimagrowth.license.model.License;
 import java.util.Locale;
 import java.util.Optional;
 import java.util.concurrent.ThreadLocalRandom;

@@ -1,10 +1,10 @@
-package com.optimagrowth.licensingservice.controller;
+package com.optimagrowth.license.controller;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
-import com.optimagrowth.licensingservice.model.License;
-import com.optimagrowth.licensingservice.service.LicenseService;
+import com.optimagrowth.license.model.License;
+import com.optimagrowth.license.service.LicenseService;
 import java.util.Locale;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
